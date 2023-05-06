@@ -1,3 +1,63 @@
+* {
+    color:rgb(42, 49, 71)
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color:rgb(42, 49, 71);
+}
+
+h1 {
+    color:rgb(116, 190, 190)
+}
+
+nav {
+    padding-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color:rgb(116, 190, 190)
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 750px;
+}
+
+nav ul li {
+    border-bottom: 4px solid rgb(116, 190, 190);
+    list-style: none;
+}
+
+figure {
+    background-image: url(../images/background-image3.png);
+    height: 300px;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-size: cover;
+}
+
+figcaption {
+    background-color:rgb(116, 190, 190);
+    font-size: 40px;
+}
+.flex-wrapper {
+    display: flex;  
+    justify-content: space-evenly;
+}
+
+
+
 
 
 
