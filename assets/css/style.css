@@ -56,6 +56,93 @@ figcaption {
     justify-content: space-evenly;
 }
 
+aside {
+    flex: 1;
+    flex-direction: column;
+    margin-right: 5px; 
+}
+
+aside h2 {
+    font-size: 60px;
+}
+
+main {
+    display: flex;
+    flex: 3;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.aside-flex-item {
+    border-right: 4px solid rgb(6, 25, 80);
+}
+
+.main-flex-item {
+    border: 4px solid rgb(116, 190, 190);
+    margin: 10px;
+    padding: 5px;
+
+}
+
+#main-box-1 {
+    flex: 0 1 91%;
+    border: none;
+}
+
+#main-box-2 {
+    flex: 0 1 91%;
+}
+
+#main-box-3 {
+    flex: 0 0 44%;
+}
+
+#main-box-4 {
+    flex: 0 0 44%;
+}
+
+#main-box-5 {
+    flex: 0 0 44%;
+}
+
+#main-box-6 {
+    flex: 0 0 44%;
+}
+
+#main-box-7 {
+    flex: 0 1 9%;
+}
+
+/* 
+#main-box-1 {
+    flex: 0 0 1000px;
+}
+
+#main-box-2 {
+    flex: 0 0 1000px;
+}
+
+#main-box-3 {
+    flex: 0 0 487.5px;
+}
+
+#main-box-4 {
+    flex: 0 0 487.5px;
+}
+
+#main-box-5 {
+    flex: 0 0 487.5px;
+}
+
+#main-box-6 {
+    flex: 0 0 487.5px;
+}
+
+#main-box-7 {
+    flex: 0 0 1000px;
+}
+*/
+
 
 
 
