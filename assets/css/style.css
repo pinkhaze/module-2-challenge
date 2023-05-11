@@ -1,0 +1,45 @@
+:root {
+    --primary-color: rgb(47, 79, 79);
+    --secondary-color: lightpink; 
+
+
+    
+}
+/* Style header and its contents */
+header {
+    display: flex;                     /* turn header into flex container; heading & nav on same axis */
+    justify-content: space-between;    /* spread out heading & nav */
+    align-items: center;               /* position heading & nav in center of cross axis */
+    height: 100px;
+    background-color: var(--primary-color);
+}
+
+/* Style main heading */
+h1 {
+    font-size: 280%;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 5px 10px 5px 15px;        /* top, right, bottom left */
+    margin-bottom: 5px;   
+}
+
+/* Style nav bar and list items */
+nav ul {
+    display: flex;                     /* position links on main axis */
+    justify-content: space-between;
+    list-style: none;                  /* remove bullet points */
+    min-width: 440px;
+    margin-right: 50px;
+}
+
+/* Style nav bar links */
+nav a {
+    font-size: 150%;
+    color: var(--secondary-color);
+    text-decoration: none;             /* remove underlining */
+    border-bottom: 4px solid;          /* add bottom border */
+}
+
+
+
+
