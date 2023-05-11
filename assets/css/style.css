@@ -3,8 +3,8 @@
 }
 
 :root {
-    --primary-color: rgb(47, 79, 79);
-    --secondary-color: lightpink; 
+    --primary-color: rgb(51, 61, 69);
+    --secondary-color: rgb(182, 204, 210, 255);
     
 }
 /* Style header and its contents */
@@ -49,7 +49,7 @@ main {
     flex-direction: column;
     line-height: 1.5;
     color: var(--primary-color);
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 /* Style and position left hand content of each section */
@@ -60,6 +60,10 @@ aside {
     width: 20%;
     font-size: 260%;
     padding-right: 50px;
+}
+
+article {
+    max-width: 75%;
 }
 
 /* Style and position background image */
@@ -99,7 +103,7 @@ aside {
 /* Turn top, middle and bottom sections of main into flex containers */
 .section-container {
     display: flex;
-    margin: 15px;
+    margin: 20px;
 }
 
 /* Style and position right side content of each section */
@@ -114,26 +118,38 @@ aside {
     position: relative;
 }
 
+.box-caption {
+    position: absolute;
+    margin-top: -80px;
+    padding: 5px;
+    background-color: var(--secondary-color);
+}
+
+.box-link {
+    color: var(--primary-color);
+}
+
 /* Create grid of boxes */
 #project-grid {
     display: grid;
     grid-template-columns: 50% 50%;     /* create two columns of boxes */
-    grid-gap: 10px;                     /* put space between boxes */
-    max-width: 75%;
+    grid-gap: 15px;                     /* put space between boxes */
+    max-width: 70%;
 }
 
 /* Resize top box to take up 2 columns instead of 1 */
 #large-box {
     grid-column: span 2;
-    height: 550px;
+    height: 700px;
     border: 5px solid var(--secondary-color);
 }
 
 /* Style 4 small boxes */
 #small-box {
-    height: 150px;
+    height: 250px;
     border: 5px solid var(--secondary-color);
 }
+
 /* Style elements for responsiveness */
 @media screen and (max-width: 768px) {
     header {
