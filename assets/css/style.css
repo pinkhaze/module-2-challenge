@@ -1,8 +1,10 @@
+* {
+    margin: 0px;
+}
+
 :root {
     --primary-color: rgb(47, 79, 79);
     --secondary-color: lightpink; 
-
-
     
 }
 /* Style header and its contents */
@@ -45,14 +47,20 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    line-height: 1.5;
 }
 
-/* Style left and position left hand content of each section */
+/* Style and position left hand content of each section */
 aside {
+    display: flex;    
+    justify-content: flex-end;                 
+    align-items: center;               /* align heading in center of cross axis */
     width: 20%;
+    font-size: 260%;
+    padding-right: 50px;
 }
 
-/* Style background image */
+/* Style and position background image */
 .background-image {
     background-image: url(../images/background-image.png);
     height: 300px;
@@ -63,7 +71,7 @@ aside {
     position: relative;               
 }
 
-/* Style profile photo */
+/* Style and position profile photo */
 .profile-photo {
     max-width: 210;
     max-height: 210px;
@@ -71,7 +79,7 @@ aside {
     top: 50px;
     left: 50px;
     border-radius: 30%;
-    background-color:rgb(47, 79, 79)
+    background-color: var(--primary-color);
 ;}
 
 /* Style caption on background image */
