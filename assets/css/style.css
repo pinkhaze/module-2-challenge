@@ -2,11 +2,13 @@
     margin: 0px;
 }
 
+/* Set main colors */
+/* Found rgb values through https://imagecolorpicker.com/en */
 :root {
     --primary-color: rgb(51, 61, 69);
-    --secondary-color: rgb(182, 204, 210, 255);
-    
+    --secondary-color: rgb(182, 204, 210, 255);   
 }
+
 /* Style header and its contents */
 header {
     display: flex;                     /* turn header into flex container; heading & nav on same axis */
@@ -127,6 +129,21 @@ article {
 
 .box-link {
     color: var(--primary-color);
+}
+
+.contact-list-items {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+    margin-left: -5px;
+}
+
+.contact-list-items a {
+    font-size: 130%;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: 4px solid;
 }
 
 /* Create grid of boxes */
