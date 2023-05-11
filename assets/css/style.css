@@ -23,7 +23,7 @@ h1 {
     margin-bottom: 5px;   
 }
 
-/* Style nav bar and list items */
+/* Style nav bar and list appearance */
 nav ul {
     display: flex;                     /* position links on main axis */
     justify-content: space-between;
@@ -38,6 +38,18 @@ nav a {
     color: var(--secondary-color);
     text-decoration: none;             /* remove underlining */
     border-bottom: 4px solid;          /* add bottom border */
+}
+
+/* Turn main content into flex container; stack "About", "Work" and "Contact" sections */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/* Style left and position left hand content of each section */
+aside {
+    width: 20%;
 }
 
 /* Style background image */
@@ -74,6 +86,16 @@ nav a {
     padding: 5px;
 }
 
+/* Turn top, middle and bottom sections of main into flex containers */
+.section-container {
+    display: flex;
+    margin: 15px;
+}
+
+/* Style and position right side content of each section */
+.right-side-content {
+    width: 80%;
+}
 /* Style elements for responsiveness */
 @media screen and (max-width: 768px) {
     header {
