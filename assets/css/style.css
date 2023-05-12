@@ -1,5 +1,5 @@
 * {
-    margin: 0px;
+    margin: 0px;                 
 }
 
 /* Set main colors */
@@ -24,7 +24,7 @@ h1 {
     font-size: 280%;
     color: var(--primary-color);
     background-color: var(--secondary-color);
-    padding: 5px 10px 5px 15px;        /* top, right, bottom left */
+    padding: 5px 10px 5px 15px;       
     margin-bottom: 5px;   
 }
 
@@ -73,7 +73,7 @@ article {
 .background-image {
     background-image: url(../images/background-image.png);
     height: 300px;
-    background-size: cover;            /* image covers entire page */
+    background-size: cover;            /* image fills entire page */
     display: flex;                     
     flex-wrap: wrap;                
     justify-content: flex-end;         /* initial position of profile photo and caption on left */
@@ -114,6 +114,7 @@ article {
     width: 80%;
 }
 
+/* Size and position project images */
 .project-image {
     width: 100%;
     height: 100%;
@@ -121,25 +122,28 @@ article {
     position: relative;
 }
 
+/* Style and position project boxes */
 .box-caption {
-    position: absolute;
+    position: absolute;                   /* fix caption to box */
     margin-top: -80px;
     padding: 5px;
     background-color: var(--secondary-color);
 }
 
+/* Set color for project text */
 .box-link {
     color: var(--primary-color);
 }
 
+/* Position contact content */
 .contact-list-items {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     padding-top: 25px;
-    margin-left: -5px;
 }
 
+/* Style contact links */
 .contact-list-items a {
     font-size: 130%;
     color: var(--primary-color);
@@ -160,7 +164,7 @@ article {
 #large-box {
     grid-column: span 2;
     height: 700px;
-    border: 5px solid var(--secondary-color);
+    border: 7px solid var(--secondary-color);
 }
 
 /* Style 4 small boxes */
@@ -173,6 +177,7 @@ article {
 @media screen and (max-width: 768px) {
     header, main {
       flex-direction: column;
+      margin-right: -10px;
     }
 
     h1 {
@@ -201,7 +206,7 @@ article {
         max-width: 100%;
         font-size: 14px;
     }
-
+    /* stack profile photo and caption */
     .background-image {
         flex-direction: column;
         height: 200px;
@@ -220,7 +225,7 @@ article {
         margin-bottom: 10px;
         margin-left: 10px;
     }
-
+    /* stack aside and .right-side-content */
     .section-container {
         flex-direction: column;  
     }
@@ -239,9 +244,9 @@ article {
     .contact-list-items li {
         font-size: 12px;
     }
-
+    /* resize boxes in grid */
     #project-grid {
-        max-width: 90%;
+        max-width: 100%;
     }
 
     #large-box {
