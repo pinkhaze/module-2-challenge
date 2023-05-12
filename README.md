@@ -1,4 +1,4 @@
-# module-2-challenge
+# portfolio-project
 Advanced CSS Challenge: Portfolio Project
 
 ## Description
