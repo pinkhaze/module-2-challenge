@@ -7,7 +7,6 @@
 :root {
     --primary-color: rgb(51, 61, 69);
     --secondary-color: rgba(182, 204, 210, 255);   
-    --tertiary-color: rgba(210, 182, 135, 255);
 }
 
 /* Style header and its contents */
@@ -112,6 +111,10 @@ article {
 /* Style and position right side content of each section */
 .right-side-content {
     width: 80%;
+}
+
+.box:hover {
+    opacity: 20%;
 }
 
 /* Size and position project images */
